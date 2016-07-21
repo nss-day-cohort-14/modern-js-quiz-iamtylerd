@@ -63,6 +63,12 @@ gulp.task('lint', function() {
     .on('error', function() { });
 });
 
+gulp.task('sassify', function () {
+  return gulp.src('./sass/**/*.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('./css'));
+});
+
 // Jasmine
 // gulp.task('specs', function() {
 //   return gulp.src('./spec/*pec.js')

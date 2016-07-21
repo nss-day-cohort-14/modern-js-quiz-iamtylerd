@@ -19,9 +19,6 @@ function attackLogic (left, right) {
 		right.health = right.health - left.attack;
 		attackLogic(left, right);
 	}
-	// do {
-	// 	console.log(left.health, right.health)
-	// } while (left.health >= 0 && right.health >=0);
 }
 
 module.exports = {attackLogic}

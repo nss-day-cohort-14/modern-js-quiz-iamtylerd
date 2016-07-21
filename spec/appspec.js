@@ -14,7 +14,7 @@ describe("The specification for basic app", function() {
 
 describe("The specification for basic app", function() {
 	  it("should have a fastCycle function", function() {
-	  	// let cycle = new Cycle();
+	  	// let cycle = new Constructor.cycle();
 	  	let testCycle = new Cycle.fastCycle();
 	  	let slow = new Cycle.slowCycle();
 
